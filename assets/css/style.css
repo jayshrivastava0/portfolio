@@ -335,7 +335,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .education-horizontal-timeline {
     padding: 80px 0;
+    /* padding-left: 100px; */
 }
+
 
 /*.education-horizontal-timeline*/
 .education-horizontal-timeline .col-sm-4 {width: 50%; padding:0 5px;}
@@ -380,7 +382,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    border-bottom: 2px solid #e5ebf2;
 }
 .single-progress-txt {
     display: flex;
@@ -434,6 +436,63 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    bottom: -1px;
    transform: translateX(-50%);
    margin-left: 0;
+}
+
+/*-------------------------------------
+        7.  Certificates
+--------------------------------------*/
+.certificates {
+    padding: 50px 0 100px;
+    border: 1px solid #e5ebf2;
+    background-color: #f8f8f8;
+}
+
+.certificates-content {
+    padding-top: 100px;
+}
+
+.certificates .item {
+    position: relative;
+    height: auto;
+    padding-bottom: 0%; /* 5:3 aspect ratio (3/5 = 0.6 or 60%) */
+    overflow: hidden;
+    border: 1px solid #b2c1ce;
+    margin-bottom: 20px; /* Add some margin for spacing between certificates */
+}
+
+.certificates img {
+    width: 100%;
+    height: auto;
+}
+
+.isotope-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d92cf9;
+    background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
+    background: -webkit-linear-gradient(left, #d92cf9 0%,#b636ff 100%);
+    background: linear-gradient(to right, #d92cf9 0%,#b636ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d92cf9', endColorstr='#b636ff', GradientType=1);
+    /* transform: scale(0); */
+    transition: transform 0.5s linear;
+}
+
+.certificates .item:hover .isotope-overlay {
+    /* transform: scale(0.1); */
+    top : 0;
+}
+
+.isotope-overlay a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
 }
 
 /*-------------------------------------
