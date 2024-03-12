@@ -736,6 +736,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
+
+
+
+
+  
 .custom-border {
     box-sizing: border-box; /* Ensure that the border is included in the element's total width and height */
     display: flex;
@@ -749,8 +754,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     border-color: #f00; /* Change the hover border color as needed */
   }
 
+  
+
   .custom-border .custom-item {
     position: relative;
+    margin: 0 auto;
   }
 
   .custom-border .custom-item img {
